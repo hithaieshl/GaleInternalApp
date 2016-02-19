@@ -40,9 +40,9 @@
   <textarea  class="form-control" rows="5" id="comments" name="comments" >${nominateView.comments}</textarea>
 
 </div>
-  <button type="submit" value="save" name="action"  class="btn btn-primary">save</button>
+  <button type="submit" value="save" name="action"  class="btn btn-primary">Save</button>
 <button type="submit" value="submit" name="action" class="btn btn-primary">Submit</button>
-<button type="submit" value="cancel" name="action" class="btn btn-primary">Submit</button>
+<button type="submit" value="cancel" name="action" class="btn btn-primary">Cancel</button>
 </div>
 
 
