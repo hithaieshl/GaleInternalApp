@@ -75,15 +75,4 @@
     </beans:bean>
     
 
-
-<!-- conversion service -->
-<beans:bean id="conversionService"
-        class="org.springframework.context.support.ConversionServiceFactoryBean">
-    <beans:property name="converters">
-        <beans:set>
-            <beans:bean class="com.galeapp.utils.PersonIdToPersonConverter"/>
-        </beans:set>
-    </beans:property>
-</beans:bean>
- 
 </beans:beans>
