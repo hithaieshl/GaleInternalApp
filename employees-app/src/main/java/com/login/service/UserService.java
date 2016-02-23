@@ -8,5 +8,5 @@ import java.sql.SQLException;
  */
 public interface UserService
 {
-	public boolean isValidUser(String username, String password) throws SQLException;
+	public boolean isValidUser(String email, String password) throws SQLException;
 }

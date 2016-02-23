@@ -29,18 +29,18 @@ public class LoginController
 		model.addObject("loginBean", loginBean);
 		return model;
 	}
-	@RequestMapping(value="/welcome",method=RequestMethod.POST)
+	@RequestMapping(value="/home",method=RequestMethod.POST)
 	public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("loginBean")LoginBean loginBean)
 	{
 		ModelAndView model= null;
 		try
 		{
-			boolean isValidUser = loginDelegate.isValidUser(loginBean.getUsername(), loginBean.getPassword());
+			boolean isValidUser = loginDelegate.isValidUser(loginBean.getEmail(), loginBean.getPass());
 			if(isValidUser)
 			{
 				System.out.println("User Login Successful");
-				request.setAttribute("loggedInUser", loginBean.getUsername());
-				model = new ModelAndView("welcome");
+				request.setAttribute("loggedInUser", loginBean.getEmail());
+				model = new ModelAndView("home");
 			}
 			else
 			{

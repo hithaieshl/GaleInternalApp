@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>login form</title>
-    
-    
-    <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/reset.css">
-
-    
-        <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      * {
+@CHARSET "ISO-8859-1";
+{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -25,8 +14,8 @@ body {
   top: 50%;
   left: 50%;
   margin: -10rem 0 0 -10rem;
-  width: 20rem;
-  height: 20rem;
+  width: 17rem;
+  height: 17rem;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -132,7 +121,6 @@ body {
   outline: none;
   border-bottom-color: orange;
 }
-
 .login-btn {
   position: absolute;
   right: 1rem;
@@ -166,32 +154,3 @@ body {
 .login-btn:hover:after, .login-btn:focus:after, .login-btn:active:after {
   border-left-color: orange;
 }
-
-    </style>
-
-    
-        <script src="<%=request.getContextPath()%>/resources/js/prefixfree.min.js"></script>
-
-    
-  </head>
-
-  <body>
-
-    
-<div class="login">
-  <header class="login-header"><span class="text">LOGIN</span><span class="loader"></span></header>
-  <form class="login-form" action="/employees-app/login.do" method="post">
-    <input type="text" placeholder="email" name="email" class="login-input"/>
-    <input type="password" placeholder="password" name="password" class="login-input"/>
-    <button type="submit" class="login-btn">login</button>
-  </form>
-</div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-        <script src="<%=request.getContextPath()%>/resources/js/index.js"></script>
-
-    
-    
-    
-  </body>
-</html>

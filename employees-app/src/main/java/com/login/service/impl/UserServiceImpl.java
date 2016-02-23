@@ -21,9 +21,9 @@ public class UserServiceImpl implements UserService
 	}
 
 	@Override
-	public boolean isValidUser(String username, String password) throws SQLException
+	public boolean isValidUser(String email, String password) throws SQLException
 	{
-		return userDao.isValidUser(username, password);
+		return userDao.isValidUser(email, password);
 	}
 
 }

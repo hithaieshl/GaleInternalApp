@@ -28,11 +28,13 @@ public class UserDaoImpl implements UserDao
 	}
 
 	@Override
-	public boolean isValidUser(String username, String password) throws SQLException
+	public boolean isValidUser(String email, String password) throws SQLException
 	{
-		String query = "Select count(1) from users where username = ? and password = ?";
+		System.out.println("*******************************");
+		System.out.println("in dao");
+		String query = "Select count(1) from person where email = ? and password = ?";
 		PreparedStatement pstmt = dataSource.getConnection().prepareStatement(query);
-		pstmt.setString(1, username);
+		pstmt.setString(1, email);
 		pstmt.setString(2, password);
 		ResultSet resultSet = pstmt.executeQuery();
 		if(resultSet.next())
