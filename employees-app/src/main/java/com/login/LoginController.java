@@ -42,7 +42,7 @@ public class LoginController
 	 * @param response the response
 	 * @return the model and view
 	 */
-	@RequestMapping(value="/login",method=RequestMethod.GET)
+	@RequestMapping(value={"", "/login"},method=RequestMethod.GET)
 	public ModelAndView displayLogin(HttpServletRequest request, HttpServletResponse response)
 	{
 		LOGGER.info("LoginController displayLogin()");
