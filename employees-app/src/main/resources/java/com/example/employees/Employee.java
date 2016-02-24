@@ -30,3 +30,4 @@ public class Employee {
         this.email = email;     
         this.id = counter.incrementAndGet();
     }
+}
