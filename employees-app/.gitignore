@@ -11,6 +11,5 @@ test-output
 *.ipr
 bin/
 .svn
-node/
 .class
 pom.properties
