@@ -87,7 +87,7 @@ public class LoginController
 		{
 			e.printStackTrace();
 		}
-
+		LOGGER.info("Returning ModelAndView object");
 		return model;
 	}
 }
