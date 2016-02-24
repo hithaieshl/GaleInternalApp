@@ -11,5 +11,3 @@ test-output
 *.ipr
 bin/
 .svn
-.class
-pom.properties
